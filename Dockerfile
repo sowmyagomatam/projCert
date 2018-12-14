@@ -1,3 +1,6 @@
-FROM php:7.2-cli
-COPY . /usr/src/phpwebsite
-WORKDIR /usr/src/phpwebsite
+FROM devopsedu/webapp
+
+#application files
+ADD website /var/www/html
+RUN rm /var/www/html/index.html
+CMD apachectl -D FOREGROUND
