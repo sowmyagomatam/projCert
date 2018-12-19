@@ -22,6 +22,7 @@ ChromeDriver driver;
 		chromoptions.addArguments("--headless");
 		chromoptions.addArguments("--no-sandbox");
 		driver = new ChromeDriver(chromoptions);
+		
 		driver.get("http://ec2-18-216-83-78.us-east-2.compute.amazonaws.com:3001/");	
 		
 		//driver.manage().window().maximize();
