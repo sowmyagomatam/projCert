@@ -17,7 +17,7 @@ ChromeDriver driver;
 	@BeforeMethod
 	public void launch()
 	{
-		System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
 		ChromeOptions chromoptions = new ChromeOptions();
 		chromoptions.addArguments("--headless");
 		chromoptions.addArguments("--no-sandbox");
