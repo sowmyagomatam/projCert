@@ -23,7 +23,8 @@ ChromeDriver driver;
 		chromoptions.addArguments("--no-sandbox");
 		driver = new ChromeDriver(chromoptions);
 		
-		driver.get("http://ec2-18-216-83-78.us-east-2.compute.amazonaws.com:3001/");	
+		driver.get("http://ec2-52-14-10-94.us-east-2.compute.amazonaws.com:3001/");	
+		
 		
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
