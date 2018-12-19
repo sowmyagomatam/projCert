@@ -17,13 +17,13 @@ ChromeDriver driver;
 	@BeforeMethod
 	public void launch()
 	{
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver.exe");
 		ChromeOptions chromoptions = new ChromeOptions();
-		//chromoptions.addArguments("--headless");
-		//chromOptions.addArguments("--no-sandbox");
+		chromoptions.addArguments("--headless");
+		chromoptions.addArguments("--no-sandbox");
 		driver = new ChromeDriver(chromoptions);
 		driver.get("http://ec2-18-216-113-254.us-east-2.compute.amazonaws.com:3001/");		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 	}
